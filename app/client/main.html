@@ -1,0 +1,26 @@
+<head>
+  <title>Export Lighwallet Tool</title>
+</head>
+
+<body>
+  <h1>Eth Lightwallet Private Key Exporter</h1>
+  <p>This tool will save a file containing raw private key</p>
+  <p>Do not run this tool unless you are sure you want to</p>
+  <p>Your private key will be displayed on screen</p>
+  <p>You will be provided with an option to download, which can be imported to mist using:</p>
+  <p><code>geth account import key_file.txt</code></p>
+  <p>After using this file you must transfer all assets to a NEW account! <b>This account is no longer secure.</b></p>
+  {{> import}}
+</body>
+
+<template name="import">
+  <input type="file" accept='*.json'>
+  {{#if key}}
+    <br><br>
+    Key is:
+    <br>
+    <b>{{key}}</b>
+    <br><br>
+    <button>Download</button>
+  {{/if}}
+</template>

@@ -1,0 +1,11 @@
+{
+  "name": "export-lightwallet",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0",
+    "eth-lightwallet": "git+https://github.com/ConsenSys/eth-lightwallet.git#05fb95ed4a046a25e9ecfb589905d6748a95a305"
+  }
+}
